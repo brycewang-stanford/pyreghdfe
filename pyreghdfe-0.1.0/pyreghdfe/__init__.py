@@ -8,5 +8,5 @@ using the pyhdfe library for fixed effect absorption and providing robust and cl
 from .api import reghdfe
 from .results import RegressionResults
 
-__version__ = "0.1.1"
+__version__ = "0.1.0"
 __all__ = ["reghdfe", "RegressionResults", "__version__"]

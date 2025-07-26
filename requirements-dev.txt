@@ -1,0 +1,23 @@
+# Development Requirements
+# Additional dependencies for development, testing, and documentation
+
+# Core dependencies
+-r requirements.txt
+
+# Development tools
+pytest>=6.0
+pytest-cov>=2.0
+ruff>=0.1.0
+mypy>=1.0
+pandas-stubs
+
+# Documentation
+sphinx>=4.0
+sphinx-rtd-theme
+
+# Building and publishing
+build>=0.7.0
+twine>=4.0.0
+
+# Pre-commit hooks (optional)
+pre-commit>=2.0.0

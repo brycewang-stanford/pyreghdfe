@@ -1,7 +1,26 @@
 """
 Covariance matrix estimation for PyRegHDFE.
 
-This module provides robust and cluster-robust covariance matrix estimators
+This modu    # Compute residual adjustments based on HC type
+    if hc_type == "HC0":
+        # No adjustment
+        residual_adj = residuals_weighted
+    elif hc_type == "HC1":
+        # Degrees of freedom adjustment
+        df_adj = n / (n - k)
+        residual_adj = residuals_weighted * np.sqrt(df_adj)
+    elif hc_type == "HC2":
+        # HC2: Leverage adjustment 
+        H = X_weighted @ XTX_inv @ X_weighted.T
+        h_ii = np.diag(H)  # Extract diagonal elements
+        residual_adj = residuals_weighted / np.sqrt(1 - h_ii)
+    elif hc_type == "HC3":
+        # HC3: More conservative leverage adjustment
+        H = X_weighted @ XTX_inv @ X_weighted.T  
+        h_ii = np.diag(H)  # Extract diagonal elements
+        residual_adj = residuals_weighted / (1 - h_ii)
+    else:
+        raise ValueError(f"Unknown HC type: {hc_type}") and cluster-robust covariance matrix estimators
 for linear models with high-dimensional fixed effects.
 """
 

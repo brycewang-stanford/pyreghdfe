@@ -2,18 +2,18 @@
 
 [![Python Version](https://img.shields.io/pypi/pyversions/pyreghdfe)](https://pypi.org/project/pyreghdfe/)
 [![PyPI Version](https://img.shields.io/pypi/v/pyreghdfe)](https://pypi.org/project/pyreghdfe/)
-[![License](https://img.shields.io/github/license/brycewang-stanford/pyreghdfe)](LICENSE)
-[![Tests](https://github.com/brycewang-stanford/pyreghdfe/workflows/Tests/badge.svg)](https://github.com/brycewang-stanford/pyreghdfe/actions)
+[![License](https://img.shields.io/github/license/pyreghdfe/pyreghdfe)](LICENSE)
+[![Tests](https://github.com/pyreghdfe/pyreghdfe/workflows/Tests/badge.svg)](https://github.com/pyreghdfe/pyreghdfe/actions)
 [![Downloads](https://img.shields.io/pypi/dm/pyreghdfe)](https://pypi.org/project/pyreghdfe/)
 
 > **High-dimensional fixed effects regression for Python** 🐍
 
 **PyRegHDFE** is a Python implementation of Stata's `reghdfe` command for estimating linear regressions with multiple high-dimensional fixed effects. It provides efficient algorithms for absorbing fixed effects and computing robust and cluster-robust standard errors.
 
-**Perfect for**: Panel data econometrics, empirical research, policy analysis  
-**Performance**: Handles millions of observations with multiple fixed effects  
-**Output**: Stata-like regression tables and comprehensive diagnostics  
-**Algorithms**: Multiple absorption methods (within, MAP, LSMR)
+🎯 **Perfect for**: Panel data econometrics, empirical research, policy analysis  
+🚀 **Performance**: Handles millions of observations with multiple fixed effects  
+📊 **Output**: Stata-like regression tables and comprehensive diagnostics  
+🔧 **Algorithms**: Multiple absorption methods (within, MAP, LSMR)
 
 ## Features
 
@@ -250,23 +250,23 @@ print(f"Converged in {results.iterations} iterations")
 
 PyRegHDFE is designed for empirical research in economics, finance, and social sciences. Common applications include:
 
-###  **Economic Research**
+### 📊 **Economic Research**
 - **Labor Economics**: Worker-firm matched data with worker and firm fixed effects
 - **International Trade**: Exporter-importer-product-year fixed effects  
 - **Industrial Organization**: Firm-market-time fixed effects
 - **Public Economics**: Individual-policy-region-time fixed effects
 
-###  **Finance Applications**
+### 🏦 **Finance Applications**
 - **Asset Pricing**: Security-fund-time fixed effects
 - **Corporate Finance**: Firm-industry-year fixed effects
 - **Banking**: Bank-region-product-time fixed effects
 
-###  **Academic Teaching**
+### 🎓 **Academic Teaching**
 - **Econometrics Courses**: Demonstrating panel data methods
 - **Applied Economics**: Real-world empirical exercises
 - **Computational Economics**: Algorithm comparison and performance
 
-###  **Business Analytics**
+### 💼 **Business Analytics**
 - **Marketing**: Customer-product-channel-time effects
 - **Operations**: Supplier-product-facility-time effects
 - **HR Analytics**: Employee-department-manager-period effects
@@ -386,7 +386,7 @@ pytest --cov=pyreghdfe
 ### Installation for Development
 
 ```bash
-git clone https://github.com/brycewang-stanford/pyreghdfe.git
+git clone https://github.com/pyreghdfe/pyreghdfe.git
 cd pyreghdfe
 pip install -e .[dev]
 ```
@@ -450,11 +450,11 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 If you use PyRegHDFE in your research, please cite:
 
 ```bibtex
-@software{pyreghdfe2025,
+@software{pyreghdfe2024,
   title={PyRegHDFE: Python implementation of reghdfe for high-dimensional fixed effects},
   author={PyRegHDFE Contributors},
-  year={2025},
-  url={https://github.com/brycewang-stanford/pyreghdfe}
+  year={2024},
+  url={https://github.com/pyreghdfe/pyreghdfe}
 }
 ```
 
@@ -466,7 +466,7 @@ MIT License. See [LICENSE](LICENSE) file for details.
 
 PyRegHDFE aims to replicate the core functionality of Stata's `reghdfe` command. Below is a detailed comparison of features:
 
-###  **Fully Implemented Features**
+### ✅ **Fully Implemented Features**
 
 | Feature | Stata reghdfe | PyRegHDFE | Completion |
 |---------|---------------|-----------|------------|
@@ -490,7 +490,7 @@ PyRegHDFE aims to replicate the core functionality of Stata's `reghdfe` command.
 | F-statistics | ✅ Multiple tests | ✅ Overall F-test | 80% |
 | Confidence intervals | ✅ Complete | ✅ Complete | 100% |
 
-###  **Planned Features (Future Versions)**
+### ⚠️ **Planned Features (Future Versions)**
 
 | Feature | Stata reghdfe | PyRegHDFE Status | Target Version |
 |---------|---------------|------------------|----------------|
@@ -502,14 +502,14 @@ PyRegHDFE aims to replicate the core functionality of Stata's `reghdfe` command.
 | Save FE estimates | ✅ `savefe` option | ❌ Not implemented | v0.3.0 |
 | Advanced diagnostics | ✅ `sumhdfe` command | ❌ Not implemented | v0.3.0 |
 
-###  **Overall Assessment**
+### 🎯 **Overall Assessment**
 
 - **Core Functionality**: 90%+ complete
-- **Production Ready**: Yes - suitable for most research applications
+- **Production Ready**: ✅ Yes - suitable for most research applications
 - **API Compatibility**: High similarity to Stata syntax for easy migration
 - **Performance**: Excellent - leverages optimized linear algebra libraries
 
-###  **Key Advantages of PyRegHDFE**
+### 🚀 **Key Advantages of PyRegHDFE**
 
 1. **Pure Python**: No Stata license required
 2. **Open Source**: Fully customizable and extensible
@@ -518,7 +518,7 @@ PyRegHDFE aims to replicate the core functionality of Stata's `reghdfe` command.
 5. **Cost Effective**: Free alternative to commercial software
 6. **Academic Friendly**: Perfect for teaching and learning econometrics
 
-###  **Performance Benchmarks**
+### 📊 **Performance Benchmarks**
 
 PyRegHDFE delivers comparable performance to Stata reghdfe:
 

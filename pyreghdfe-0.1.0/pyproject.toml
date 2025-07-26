@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyreghdfe"
-version = "0.1.1"
+version = "0.1.0"
 description = "Python implementation of Stata's reghdfe for high-dimensional fixed effects regression"
 readme = "README.md"
 license = {text = "MIT"}
