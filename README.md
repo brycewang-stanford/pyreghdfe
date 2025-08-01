@@ -1,13 +1,26 @@
-# RegHDFE
+# PyRegHDFE
 
-**Note: This package continues to be maintained. Additionally, `reghdfe` functionality is also integrated into [StatsPAI](https://github.com/brycewang-stanford/StatsPAI/) for users who prefer the unified ecosystem.**
+## 🚀 Installation
+
+```bash
+pip install pyreghdfe
+```e: This package continues to be maintained. Additionally, `reghdfe` functionality is also integrated into [StatsPAI](https://github.com/brycewang-stanford/StatsPAI/## 📚 Documentation
+
+For detailed API reference and additional examples, visit our [GitHub repository](https://github.com/brycewang-stanford/pyreghdfe).
+
+## 🤝 Contributing
+
+We welcome contributions! Please feel free to:
+- Report bugs or request features via [GitHub Issues](https://github.com/brycewang-stanford/pyreghdfe/issues)
+- Submit pull requests for improvements
+- Share your use cases and exampless who prefer the unified ecosystem.**
 
 ---
 
-[![Python Version](https://img.shields.io/pypi/pyversions/reghdfe)](https://pypi.org/project/reghdfe/)
-[![PyPI Version](https://img.shields.io/pypi/v/reghdfe)](https://pypi.org/project/reghdfe/)
+[![Python Version](https://img.shields.io/pypi/pyversions/pyreghdfe)](https://pypi.org/project/pyreghdfe/)
+[![PyPI Version](https://img.shields.io/pypi/v/pyreghdfe)](https://pypi.org/project/pyreghdfe/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Downloads](https://img.shields.io/pypi/dm/reghdfe)](https://pypi.org/project/reghdfe/)
+[![Downloads](https://img.shields.io/pypi/dm/pyreghdfe)](https://pypi.org/project/pyreghdfe/)
 
 Python implementation of Stata's reghdfe for high-dimensional fixed effects regression.
 
@@ -241,4 +254,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**This package is actively maintained.** For questions, bug reports, or feature requests, please open an issue on [GitHub](https://github.com/brycewang-stanford/reghdfe/issues).
+**This package is actively maintained.** For questions, bug reports, or feature requests, please open an issue on [GitHub](https://github.com/brycewang-stanford/pyreghdfe/issues).
