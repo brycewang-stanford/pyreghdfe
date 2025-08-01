@@ -1,50 +1,44 @@
-# ⚠️ ARCHIVED - This repository is no longer maintained
+# RegHDFE
 
-**All functionality has been moved to [Py-Stata-Commands](https://github.com/brycewang-stanford/Py-Stata-Commands)**
+**Note: This package continues to be maintained. Additionally, `reghdfe` functionality is also integrated into [StatsPAI](https://github.com/brycewang-stanford/StatsPAI/) for users who prefer the unified ecosystem.**
 
 ---
 
-# PyRegHDFE
-
-[![Python Version](https://img.shields.io/pypi/pyversions/pyreghdfe)](https://pypi.org/project/pyreghdfe/)
-[![PyPI Version](https://img.shields.io/pypi/v/pyreghdfe)](https://pypi.org/project/pyreghdfe/)
+[![Python Version](https://img.shields.io/pypi/pyversions/reghdfe)](https://pypi.org/project/reghdfe/)
+[![PyPI Version](https://img.shields.io/pypi/v/reghdfe)](https://pypi.org/project/reghdfe/)
 [![License](https://img.shields.io/github/license/brycewang-stanford/pyreghdfe)](LICENSE)
+[![Downloads](https://img.shields.io/pypi/dm/reghdfe)](https://pypi.org/project/reghdfe/)
 
-**⚠️ MIGRATION NOTICE**: This package has been integrated into the unified **Py-Stata-Commands** package.
+Python implementation of Stata's reghdfe for high-dimensional fixed effects regression.
 
-## 🔄 Migration Instructions
+## � Installation
 
-**Old:**
 ```bash
-pip install pyreghdfe
+pip install reghdfe
 ```
+
+## 📖 Basic Usage
+
 ```python
-from pyreghdfe import reghdfe
+from reghdfe import reghdfe
 result = reghdfe(data=df, y='wage', x=['experience'], fe=['firm_id'])
 ```
 
-**New:**
-```bash
-pip install py-stata-commands
-```
-```python
-from py_stata_commands import reghdfe
-result = reghdfe.reghdfe(data=df, y='wage', x=['experience'], fe=['firm_id'])
-```
+## 🔗 Integration Options
 
-## 🎯 Why the Change?
+This package is **actively maintained** as a standalone library. For users who prefer a unified ecosystem with additional econometric and statistical tools, `reghdfe` functionality is also available through:
 
-The new unified package provides:
-- **Single installation** for all Stata-equivalent commands (tabulate, egen, reghdfe, winsor2)
-- **Consistent API** across all modules
-- **Better documentation** and examples
-- **Easier maintenance** and updates
+- **[StatsPAI](https://github.com/brycewang-stanford/StatsPAI/)** - Stats + Econometrics + ML + AI + LLMs
 
-## 📖 New Documentation
+## 🔗 Related Projects
 
-Visit the new repository for complete documentation:
-**https://github.com/brycewang-stanford/Py-Stata-Commands**
+- **[StatsPAI](https://github.com/brycewang-stanford/StatsPAI/)** - StatsPAI = Stats + Econometrics + ML + AI + LLMs  
+- **[PyStataR](https://github.com/brycewang-stanford/PyStataR)** - Unified Stata-equivalent commands and R functions
+
+## 📚 Documentation
+
+For detailed documentation, examples, and API reference, please visit our [GitHub repository](https://github.com/brycewang-stanford/reghdfe).
 
 ---
 
-*This repository is archived and will not receive further updates. Please migrate to the new package.*
+**This package is actively maintained.** For questions, bug reports, or feature requests, please open an issue on GitHub.

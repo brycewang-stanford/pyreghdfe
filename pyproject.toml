@@ -3,16 +3,16 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pyreghdfe"
+name = "reghdfe"
 version = "0.1.1"
 description = "Python implementation of Stata's reghdfe for high-dimensional fixed effects regression"
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
-    {name = "PyRegHDFE Contributors"},
+    {name = "RegHDFE Contributors"},
 ]
 maintainers = [
-    {name = "PyRegHDFE Contributors"},
+    {name = "RegHDFE Contributors"},
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -52,13 +52,13 @@ docs = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/brycewang-stanford/pyreghdfe"
-Documentation = "https://github.com/brycewang-stanford/pyreghdfe#documentation"
-Repository = "https://github.com/brycewang-stanford/pyreghdfe.git"
-"Bug Tracker" = "https://github.com/brycewang-stanford/pyreghdfe/issues"
+Homepage = "https://github.com/brycewang-stanford/reghdfe"
+Documentation = "https://github.com/brycewang-stanford/reghdfe#documentation"
+Repository = "https://github.com/brycewang-stanford/reghdfe.git"
+"Bug Tracker" = "https://github.com/brycewang-stanford/reghdfe/issues"
 
 [tool.setuptools]
-packages = ["pyreghdfe"]
+packages = ["reghdfe"]
 
 [tool.ruff]
 line-length = 100
